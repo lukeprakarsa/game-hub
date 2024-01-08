@@ -1,10 +1,7 @@
 import useData from "./useData";
+import { Platform } from "./useGames";
 
-interface Platform {
-    id: number;
-    name: string;   
-    slug: string;
-}
+
 
 const usePlatforms = () => {
     const {data, error, isLoading} = useData<Platform>('/platforms/lists/parents');
